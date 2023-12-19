@@ -1,4 +1,4 @@
-name: Calc Action
+name: Wongeun Calc Action
 description: plus and minus with Two Numbers
 inputs:
   x:
