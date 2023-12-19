@@ -1,10 +1,11 @@
 # calc-action
+### usage example
 ``` yaml
 jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-      - uses: yk1028/yk1028-calc-action@v0.0.1
+      - uses: yk1028/yk1028-calc-action@v0.0.2
         with:
           x: 12
           y: 3
