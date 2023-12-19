@@ -10,6 +10,10 @@ outputs:
     value: ${{ steps.plus.outputs.result }}
   minus:
     value: ${{ steps.minus.outputs.result }}
+  multiply:
+    value: ${{ steps.multiply.outputs.result }}
+  divide:
+    value: ${{ steps.divide.outputs.result }}
 runs:
   using: "composite"
   steps:
@@ -22,4 +26,10 @@ runs:
       shell: bash
     - id: minus
       run: echo "result=$((${{ inputs.x }} - ${{ inputs.y }}))" >> $GITHUB_OUTPUT
+      shell: bash
+    - id: multiply
+      run: echo "result=$((${{ inputs.x }} * ${{ inputs.y }}))" >> $GITHUB_OUTPUT
+      shell: bash
+    - id: divide
+      run: echo "result=$((${{ inputs.x }} / ${{ inputs.y }}))" >> $GITHUB_OUTPUT
       shell: bash
