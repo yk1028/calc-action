@@ -1,4 +1,5 @@
 name: Calc Action
+description: plus and minus with Two Numbers
 inputs:
   x:
     default: 0
