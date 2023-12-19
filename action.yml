@@ -1,5 +1,5 @@
 name: Wongeun Calc Action
-description: plus and minus with Two Numbers
+description: Four basic operations with Two Numbers
 inputs:
   x:
     default: 0
